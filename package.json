@@ -1,0 +1,39 @@
+{
+  "name": "music-box-vue3",
+  "version": "0.0.2",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "main": "./dist/music-box-vue3.umd.js",
+  "module": "./dist/music-box-vue3.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/music-box-vue3.es.js",
+      "require": "./dist/music-box-vue3.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.2.4",
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "fetch-jsonp": "^1.2.1",
+    "jquery": "^3.6.0",
+    "music-box-vue3": "0.0.1",
+    "vue": "^3.0.4",
+    "vue-jsonp": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.22",
+    "@vue/compiler-sfc": "^3.0.4",
+    "vite": "^2.8.6"
+  }
+}
